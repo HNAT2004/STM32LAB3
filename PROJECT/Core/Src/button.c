@@ -21,7 +21,7 @@ void getKeyInput(void){
 	KeyReg0 = KeyReg1;
 	KeyReg1 = KeyReg2;
 	KeyReg2 = HAL_GPIO_ReadPin(BUTTON1_GPIO_Port, BUTTON1_Pin);
-	if ((KeyReg0 == KeyReg1) && (KeyReg1 == KeyReg2)){
+	if ((KeyReg0 == KeyReg1) && (KeyReg1 == KeyReg2)){	//Debounce
 		if (KeyReg3 != KeyReg2){
 			KeyReg3 = KeyReg2;
 			if (KeyReg2 == PRESSED_STATE){
