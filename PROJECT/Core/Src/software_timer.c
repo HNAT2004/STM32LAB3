@@ -7,7 +7,7 @@
 int timer_flag = 0;
 int timer_counter = 0;
 
-void setTimer1(int duration){
+void setTimer(int duration){
 	timer_counter = duration;
 	timer_flag = 0;
 }

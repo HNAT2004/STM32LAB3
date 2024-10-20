@@ -152,7 +152,7 @@ Discarded input sections
  .text          0x0000000000000000        0x0 ./Core/Src/software_timer.o
  .data          0x0000000000000000        0x0 ./Core/Src/software_timer.o
  .bss           0x0000000000000000        0x0 ./Core/Src/software_timer.o
- .text.setTimer1
+ .text.setTimer
                 0x0000000000000000       0x28 ./Core/Src/software_timer.o
  .debug_macro   0x0000000000000000      0xa9c ./Core/Src/software_timer.o
  .group         0x0000000000000000        0xc ./Core/Src/stm32f1xx_hal_msp.o
@@ -2836,32 +2836,32 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_line    0x0000000000004ecb     0x3361 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
  .debug_line    0x000000000000822c     0x1826 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
 
-.debug_str      0x0000000000000000    0x81e74
+.debug_str      0x0000000000000000    0x81e73
  .debug_str     0x0000000000000000    0x7f4d9 ./Core/Src/button.o
                                       0x7f82c (size before relaxing)
  .debug_str     0x000000000007f4d9      0x701 ./Core/Src/main.o
                                       0x7ff7d (size before relaxing)
- .debug_str     0x000000000007fbda       0x48 ./Core/Src/software_timer.o
-                                       0x2da1 (size before relaxing)
- .debug_str     0x000000000007fc22      0x2ba ./Core/Src/stm32f1xx_hal_msp.o
+ .debug_str     0x000000000007fbda       0x47 ./Core/Src/software_timer.o
+                                       0x2da0 (size before relaxing)
+ .debug_str     0x000000000007fc21      0x2ba ./Core/Src/stm32f1xx_hal_msp.o
                                       0x7ff64 (size before relaxing)
- .debug_str     0x000000000007fedc       0xcd ./Core/Src/stm32f1xx_it.o
+ .debug_str     0x000000000007fedb       0xcd ./Core/Src/stm32f1xx_it.o
                                       0x7fcc6 (size before relaxing)
- .debug_str     0x000000000007ffa9       0x52 ./Core/Src/system_stm32f1xx.o
+ .debug_str     0x000000000007ffa8       0x52 ./Core/Src/system_stm32f1xx.o
                                       0x7f76d (size before relaxing)
- .debug_str     0x000000000007fffb       0x36 ./Core/Startup/startup_stm32f103c6ux.o
+ .debug_str     0x000000000007fffa       0x36 ./Core/Startup/startup_stm32f103c6ux.o
                                          0x61 (size before relaxing)
- .debug_str     0x0000000000080031      0x304 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+ .debug_str     0x0000000000080030      0x304 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
                                       0x7fdc4 (size before relaxing)
- .debug_str     0x0000000000080335      0x300 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
+ .debug_str     0x0000000000080334      0x300 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
                                       0x7fdcc (size before relaxing)
- .debug_str     0x0000000000080635      0x324 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
+ .debug_str     0x0000000000080634      0x324 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
                                       0x7fb31 (size before relaxing)
- .debug_str     0x0000000000080959      0x24f ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
+ .debug_str     0x0000000000080958      0x24f ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
                                       0x7fb6a (size before relaxing)
- .debug_str     0x0000000000080ba8      0xdde ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
+ .debug_str     0x0000000000080ba7      0xdde ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
                                       0x80b53 (size before relaxing)
- .debug_str     0x0000000000081986      0x4ee ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
+ .debug_str     0x0000000000081985      0x4ee ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
                                       0x802f4 (size before relaxing)
 
 .comment        0x0000000000000000       0x53
