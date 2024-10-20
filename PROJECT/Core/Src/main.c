@@ -97,12 +97,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-//	  HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin,
-//			  HAL_GPIO_ReadPin(BUTTON1_GPIO_Port, BUTTON1_Pin));
 
-	  if (HAL_GPIO_ReadPin(BUTTON1_GPIO_Port, BUTTON1_Pin) == GPIO_PIN_RESET){
-		  HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
-	  }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
