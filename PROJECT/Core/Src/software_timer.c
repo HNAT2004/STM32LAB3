@@ -4,11 +4,18 @@
  *  Created on: Oct 20, 2024
  *      Author: ADMIN
  */
+int timer_flag_0 = 0;
 int timer_flag_1 = 0;
 int timer_flag_2 = 0;
 
+int timer_counter_0 = 0;
 int timer_counter_1 = 0;
 int timer_counter_2 = 0;
+
+void setTimer(int duration){
+	timer_counter_0 = duration;
+	timer_flag_0 = 0;
+}
 
 void setTimer_X(int duration){
 	timer_counter_1 = duration;
@@ -21,6 +28,12 @@ void setTimer_Y(int duration){
 }
 
 void timer_run(void){
+	if(timer_counter_0 > 0){
+		timer_counter_0--;
+		if(timer_counter_0 <= 0){
+			timer_flag_0 = 1;		//Time's up
+		}
+	}
 	if(timer_counter_1 > 0){
 		timer_counter_1--;
 		if(timer_counter_1 <= 0){

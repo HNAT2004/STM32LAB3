@@ -106,7 +106,7 @@ int main(void)
   while (1)
   {
 	  fsm_automatic_run();
-	  updateBuffer();
+//	  updateBuffer();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
