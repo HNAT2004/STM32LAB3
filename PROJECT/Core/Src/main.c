@@ -25,7 +25,8 @@
 #include "software_timer.h"
 #include "button.h"
 #include "fsm_automatic.h"
-#include "fsm_manual.h"
+#include "display7SEG.h"
+#include "modes.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
