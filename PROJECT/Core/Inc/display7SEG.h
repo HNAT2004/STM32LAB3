@@ -18,6 +18,6 @@ extern int second1_Y;
 void display7SEG_X(int number);
 void display7SEG_Y(int number);
 void update7SEG(int index);
-void updateClockBuffer(void);
+void updateBuffer(void);
 
 #endif /* INC_DISPLAY7SEG_H_ */

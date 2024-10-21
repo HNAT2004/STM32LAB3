@@ -60,7 +60,10 @@ static void MX_TIM2_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+int second0_X = 0;
+int second1_X = 4;
+int second0_Y = 0;
+int second1_Y = 2;
 /* USER CODE END 0 */
 
 /**
@@ -102,10 +105,8 @@ int main(void)
   status_Y = INIT;
   while (1)
   {
-//	  if (isButton1Pressed() == 1){
-//		  HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
-//	  }
 	  fsm_automatic_run();
+	  updateBuffer();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
