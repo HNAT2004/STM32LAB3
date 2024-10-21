@@ -97,7 +97,11 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-
+	  if (button1_flag == 1){
+		  button1_flag = 0;
+		  //TODO
+		  HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
+	  }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
