@@ -25,6 +25,7 @@
 #include "software_timer.h"
 #include "button.h"
 #include "fsm_automatic.h"
+#include "fsm_manual.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -102,7 +103,7 @@ int main(void)
 //	  if (isButton1Pressed() == 1){
 //		  HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
 //	  }
-
+	  fsm_manual_run();
 	  fsm_automatic_run();
     /* USER CODE END WHILE */
 

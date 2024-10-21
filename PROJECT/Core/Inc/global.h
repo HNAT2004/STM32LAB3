@@ -17,6 +17,10 @@
 #define AUTO_YELLOW 3
 #define AUTO_GREEN	4
 
+#define MANUAL_RED		12
+#define MANUAL_YELLOW	13
+#define MANUAL_GREEN	14
+
 extern int status;
 
 #endif /* INC_GLOBAL_H_ */
