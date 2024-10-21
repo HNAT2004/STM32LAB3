@@ -20,6 +20,14 @@ void subKeyProcess(void){
 //	HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
 }
 
+int isButton1Pressed(void){
+	if (button1_flag == 1){
+		button1_flag = 0;
+		return 1;
+	}
+	else return 0;
+}
+
 void getKeyInput(void){
 	KeyReg0 = KeyReg1;
 	KeyReg1 = KeyReg2;
