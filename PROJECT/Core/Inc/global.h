@@ -12,15 +12,19 @@
 #include "button.h"
 #include "main.h"
 
-#define INIT		1
-#define AUTO_RED	2
-#define AUTO_YELLOW 3
-#define AUTO_GREEN	4
+#define INIT			1
+#define AUTO_RED_X		2
+#define AUTO_YELLOW_X 	3
+#define AUTO_GREEN_X	4
+#define AUTO_RED_Y		5
+#define AUTO_YELLOW_Y 	6
+#define AUTO_GREEN_Y	7
 
 #define MANUAL_RED		12
 #define MANUAL_YELLOW	13
 #define MANUAL_GREEN	14
 
-extern int status;
+extern int status_X;
+extern int status_Y;
 
 #endif /* INC_GLOBAL_H_ */

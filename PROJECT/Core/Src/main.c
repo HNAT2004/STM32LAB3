@@ -97,13 +97,13 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  status = INIT;
+  status_X = INIT;
+  status_Y = INIT;
   while (1)
   {
 //	  if (isButton1Pressed() == 1){
 //		  HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
 //	  }
-	  fsm_manual_run();
 	  fsm_automatic_run();
     /* USER CODE END WHILE */
 
