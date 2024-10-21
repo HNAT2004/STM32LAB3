@@ -226,3 +226,28 @@ void update7SEG(int index){
 		break;
 	}
 }
+
+void updateBuffer(void){
+	if (second1_X > 9){
+		if (second0_X > 9){
+			second0_X = 0;
+			second1_X = 0;
+		}
+		else{
+			second0_X++;
+			second1_X = 0;
+		}
+	}
+	if (second1_Y > 9){
+		if (second0_Y > 9){
+			second0_Y = 0;
+			second1_Y = 0;
+		}
+		else{
+			second0_Y++;
+			second1_Y = 0;
+		}
+	}
+	update7SEG(index_led++);
+	if (index_led > 1) index_led = 0;
+}

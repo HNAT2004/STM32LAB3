@@ -1,3 +1,4 @@
 display7SEG.c:13:6:display7SEG_X	16	static
 display7SEG.c:110:6:display7SEG_Y	16	static
 display7SEG.c:207:6:update7SEG	16	static
+display7SEG.c:230:6:updateBuffer	8	static

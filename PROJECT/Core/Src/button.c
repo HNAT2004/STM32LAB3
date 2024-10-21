@@ -66,7 +66,7 @@ int isButton3Pressed(void){
 	else return 0;
 }
 
-void getKeyInput_B1(void){
+void getKeyInput_1(void){
 	KeyReg0_B1 = KeyReg1_B1;
 	KeyReg1_B1 = KeyReg2_B1;
 	KeyReg2_B1 = HAL_GPIO_ReadPin(BUTTON_1_GPIO_Port, BUTTON_1_Pin); //Read current signal of button
@@ -87,7 +87,7 @@ void getKeyInput_B1(void){
 	}
 }
 
-void getKeyInput_B2(void){
+void getKeyInput_2(void){
 	KeyReg0_B2 = KeyReg1_B2;
 	KeyReg1_B2 = KeyReg2_B2;
 	KeyReg2_B2 = HAL_GPIO_ReadPin(BUTTON_2_GPIO_Port, BUTTON_2_Pin); //Read current signal of button
@@ -108,7 +108,7 @@ void getKeyInput_B2(void){
 	}
 }
 
-void getKeyInput_B3(void){
+void getKeyInput_3(void){
 	KeyReg0_B3 = KeyReg1_B3;
 	KeyReg1_B3 = KeyReg2_B3;
 	KeyReg2_B3 = HAL_GPIO_ReadPin(BUTTON_3_GPIO_Port, BUTTON_3_Pin); //Read current signal of button

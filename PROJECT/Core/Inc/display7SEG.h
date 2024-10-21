@@ -10,6 +10,11 @@
 
 #include "global.h"
 
+extern int second0_X;
+extern int second1_X;
+extern int second0_Y;
+extern int second1_Y;
+
 void display7SEG_X(int number);
 void display7SEG_Y(int number);
 void update7SEG(int index);
