@@ -20,7 +20,7 @@ void subKeyProcess(void){
 void getKeyInput(void){
 	KeyReg0 = KeyReg1;
 	KeyReg1 = KeyReg2;
-	KeyReg2 = HAL_GPIO_ReadPin(BUTTON1_GPIO_Port, BUTTON1_Pin);
+	KeyReg2 = HAL_GPIO_ReadPin(BUTTON1_GPIO_Port, BUTTON1_Pin); //Read current signal of button
 	if ((KeyReg0 == KeyReg1) && (KeyReg1 == KeyReg2)){	//Debounce
 		if (KeyReg3 != KeyReg2){
 			KeyReg3 = KeyReg2;
