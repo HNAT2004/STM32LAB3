@@ -103,10 +103,19 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   status_X = INIT;
   status_Y = INIT;
+  setTimer_X(1);
+  setTimer_Y(1);
+  setTimer(100);
   while (1)
   {
 	  fsm_automatic_run();
-//	  updateBuffer();
+	  if (timer_flag_0 == 1){
+		  second1_X--;
+		  second1_Y--;
+		  if (second1_X < 0){
+
+		  }
+	  }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
