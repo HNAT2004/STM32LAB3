@@ -45,7 +45,7 @@ void fsm_manual_run(void){
 		HAL_GPIO_WritePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin, GPIO_PIN_RESET);
 
 		if (timer_flag_1 == 1){
-			status = AUTO_RED;
+			status = AUTO_GREEN;
 			setTimer1(300);
 		}
 		if (isButton1Pressed() == 1){

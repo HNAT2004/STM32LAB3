@@ -554,9 +554,9 @@ void fsm_manual_run(void){
  8000454:	681b      	ldr	r3, [r3, #0]
  8000456:	2b01      	cmp	r3, #1
  8000458:	d106      	bne.n	8000468 <fsm_manual_run+0xe8>
-			status = AUTO_RED;
+			status = AUTO_GREEN;
  800045a:	4b0e      	ldr	r3, [pc, #56]	; (8000494 <fsm_manual_run+0x114>)
- 800045c:	2202      	movs	r2, #2
+ 800045c:	2204      	movs	r2, #4
  800045e:	601a      	str	r2, [r3, #0]
 			setTimer1(300);
  8000460:	f44f 7096 	mov.w	r0, #300	; 0x12c
