@@ -10,7 +10,8 @@
 
 #include "global.h"
 
-void display7SEG(int number);
+void display7SEG_X(int number);
+void display7SEG_Y(int number);
 void update7SEG(int index);
 void updateClockBuffer(void);
 
