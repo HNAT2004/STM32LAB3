@@ -108,7 +108,7 @@ int main(void)
   setTimer_Sweeper_Y(25);
   while (1)
   {
-	  display7SEG_Y(7);
+	  mode_1();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -216,9 +216,9 @@ static void MX_GPIO_Init(void)
                           |SEG6_X_Pin|EN0_X_Pin|EN1_X_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, SEG0_Y_Pin|SEG1_Y_Pin|SEG2_Y_Pin|SEG3_Y_Pin
-                          |SEG4_Y_Pin|SEG5_Y_Pin|SEG6_Y_Pin|EN0_Y_Pin
-                          |EN1_Y_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, SEG0_Y_Pin|SEG1_Y_Pin|SEG2_Y_Pin|EN1_Y_Pin
+                          |SEG3_Y_Pin|SEG4_Y_Pin|SEG5_Y_Pin|SEG6_Y_Pin
+                          |EN0_Y_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : RED_X_Pin YELLOW_X_Pin GREEN_X_Pin RED_Y_Pin
                            YELLOW_Y_Pin GREEN_Y_Pin SEG0_X_Pin SEG1_X_Pin
@@ -233,12 +233,12 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : SEG0_Y_Pin SEG1_Y_Pin SEG2_Y_Pin SEG3_Y_Pin
-                           SEG4_Y_Pin SEG5_Y_Pin SEG6_Y_Pin EN0_Y_Pin
-                           EN1_Y_Pin */
-  GPIO_InitStruct.Pin = SEG0_Y_Pin|SEG1_Y_Pin|SEG2_Y_Pin|SEG3_Y_Pin
-                          |SEG4_Y_Pin|SEG5_Y_Pin|SEG6_Y_Pin|EN0_Y_Pin
-                          |EN1_Y_Pin;
+  /*Configure GPIO pins : SEG0_Y_Pin SEG1_Y_Pin SEG2_Y_Pin EN1_Y_Pin
+                           SEG3_Y_Pin SEG4_Y_Pin SEG5_Y_Pin SEG6_Y_Pin
+                           EN0_Y_Pin */
+  GPIO_InitStruct.Pin = SEG0_Y_Pin|SEG1_Y_Pin|SEG2_Y_Pin|EN1_Y_Pin
+                          |SEG3_Y_Pin|SEG4_Y_Pin|SEG5_Y_Pin|SEG6_Y_Pin
+                          |EN0_Y_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;

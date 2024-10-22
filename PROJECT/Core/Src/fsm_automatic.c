@@ -23,6 +23,7 @@ void fsm_automatic_run_X(void){
 		HAL_GPIO_WritePin(RED_X_GPIO_Port, RED_X_Pin, GPIO_PIN_SET);
 		HAL_GPIO_WritePin(YELLOW_X_GPIO_Port, YELLOW_X_Pin, GPIO_PIN_SET);
 		HAL_GPIO_WritePin(GREEN_X_GPIO_Port, GREEN_X_Pin, GPIO_PIN_SET);
+
 		status_X = AUTO_RED_X;
 		clock_X = 5;
 		setTimer_X(500);
@@ -75,9 +76,11 @@ void fsm_automatic_run_Y(void){
 		HAL_GPIO_WritePin(RED_Y_GPIO_Port, RED_Y_Pin, GPIO_PIN_SET);
 		HAL_GPIO_WritePin(YELLOW_Y_GPIO_Port, YELLOW_Y_Pin, GPIO_PIN_SET);
 		HAL_GPIO_WritePin(GREEN_Y_GPIO_Port, GREEN_Y_Pin, GPIO_PIN_SET);
+
 		status_Y = AUTO_GREEN_Y;
 		clock_Y = 3;
 		setTimer_Y(300);
+		break;
 
 	case AUTO_RED_Y:
 		HAL_GPIO_WritePin(RED_Y_GPIO_Port, RED_Y_Pin, GPIO_PIN_RESET);

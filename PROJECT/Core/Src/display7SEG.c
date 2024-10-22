@@ -205,23 +205,6 @@ void display7SEG_Y(int number){
 	}
 }
 
-void update7SEG_X(int index){
-	switch(index){
-	case 0:
-		HAL_GPIO_WritePin(EN0_X_GPIO_Port, EN0_X_Pin, RESET);
-		HAL_GPIO_WritePin(EN1_X_GPIO_Port, EN1_X_Pin, SET);
-		display7SEG_X(led_buffer_X[0]);
-		break;
-	case 1:
-		HAL_GPIO_WritePin(EN0_X_GPIO_Port, EN0_X_Pin, SET);
-		HAL_GPIO_WritePin(EN1_X_GPIO_Port, EN1_X_Pin, RESET);
-		display7SEG_X(led_buffer_X[1]);
-		break;
-	default:
-		break;
-	}
-}
-
 void update7SEG_Y(int index){
 	switch(index){
 	case 0:
@@ -233,6 +216,23 @@ void update7SEG_Y(int index){
 		HAL_GPIO_WritePin(EN0_Y_GPIO_Port, EN0_Y_Pin, SET);
 		HAL_GPIO_WritePin(EN1_Y_GPIO_Port, EN1_Y_Pin, RESET);
 		display7SEG_Y(led_buffer_Y[1]);
+		break;
+	default:
+		break;
+	}
+}
+
+void update7SEG_X(int index){
+	switch(index){
+	case 0:
+		HAL_GPIO_WritePin(EN0_X_GPIO_Port, EN0_X_Pin, RESET);
+		HAL_GPIO_WritePin(EN1_X_GPIO_Port, EN1_X_Pin, SET);
+		display7SEG_X(led_buffer_X[0]);
+		break;
+	case 1:
+		HAL_GPIO_WritePin(EN0_X_GPIO_Port, EN0_X_Pin, SET);
+		HAL_GPIO_WritePin(EN1_X_GPIO_Port, EN1_X_Pin, RESET);
+		display7SEG_X(led_buffer_X[1]);
 		break;
 	default:
 		break;

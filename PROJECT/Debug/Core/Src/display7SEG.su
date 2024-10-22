@@ -1,6 +1,6 @@
 display7SEG.c:14:6:display7SEG_X	16	static
 display7SEG.c:111:6:display7SEG_Y	16	static
-display7SEG.c:208:6:update7SEG_X	16	static
-display7SEG.c:225:6:update7SEG_Y	16	static
+display7SEG.c:208:6:update7SEG_Y	16	static
+display7SEG.c:225:6:update7SEG_X	16	static
 display7SEG.c:242:6:updateBuffer_X	16	static
 display7SEG.c:260:6:updateBuffer_Y	16	static
