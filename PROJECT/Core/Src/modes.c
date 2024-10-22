@@ -10,8 +10,9 @@
 void mode_1(void){
 	fsm_automatic_run_X();
 	fsm_automatic_run_Y();
-	updateBuffer_X(clock_X);
-	updateBuffer_Y(clock_Y);
+//	updateBuffer_X(clock_X);
+//	updateBuffer_Y(clock_Y);
+	updateBuffer(clock_X, clock_Y);
 	countdown();
 }
 void mode_2(void);

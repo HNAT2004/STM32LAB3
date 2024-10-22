@@ -8,6 +8,7 @@
 
 int index_led_X = 0;
 int index_led_Y = 0;
+int index_led = 0;
 int led_buffer_X[2] = {0, 0};
 int led_buffer_Y[2] = {0, 0};
 
@@ -239,6 +240,29 @@ void update7SEG_X(int index){
 	}
 }
 
+void update7SEG(int index){
+	switch(index){
+	case 0:
+		HAL_GPIO_WritePin(EN0_X_GPIO_Port, EN0_X_Pin, RESET);
+		HAL_GPIO_WritePin(EN1_X_GPIO_Port, EN1_X_Pin, SET);
+		HAL_GPIO_WritePin(EN0_Y_GPIO_Port, EN0_Y_Pin, RESET);
+		HAL_GPIO_WritePin(EN1_Y_GPIO_Port, EN1_Y_Pin, SET);
+		display7SEG_Y(led_buffer_Y[0]);
+		display7SEG_X(led_buffer_X[0]);
+		break;
+	case 1:
+		HAL_GPIO_WritePin(EN0_X_GPIO_Port, EN0_X_Pin, SET);
+		HAL_GPIO_WritePin(EN1_X_GPIO_Port, EN1_X_Pin, RESET);
+		HAL_GPIO_WritePin(EN0_Y_GPIO_Port, EN0_Y_Pin, SET);
+		HAL_GPIO_WritePin(EN1_Y_GPIO_Port, EN1_Y_Pin, RESET);
+		display7SEG_Y(led_buffer_Y[1]);
+		display7SEG_X(led_buffer_X[1]);
+		break;
+	default:
+		break;
+	}
+}
+
 void updateBuffer_X(int second_X){
 	if (second_X < 10){
 		led_buffer_X[0] = 0;
@@ -275,3 +299,28 @@ void updateBuffer_Y(int second_Y){
 	}
 }
 
+void updateBuffer(int second_X, int second_Y){
+	if (second_X < 10){
+		led_buffer_X[0] = 0;
+		led_buffer_X[1] = second_X;
+	}
+	if (second_X >= 10){
+		led_buffer_X[0] = second_X / 10;
+		led_buffer_X[1] = second_X % 10;
+	}
+	if (second_Y < 10){
+		led_buffer_Y[0] = 0;
+		led_buffer_Y[1] = second_Y;
+	}
+	if (second_Y >= 10){
+		led_buffer_Y[0] = second_Y / 10;
+		led_buffer_Y[1] = second_Y % 10;
+	}
+	if(timer_flag_0 == 1){					//7SEG sweeper
+		update7SEG(index_led++);
+		if (index_led > 1){
+			index_led = 0;
+		}
+		setTimer_Sweeper_X(25);
+	}
+}
