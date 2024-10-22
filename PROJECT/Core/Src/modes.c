@@ -5,8 +5,6 @@
  *      Author: ADMIN
  */
 #include "modes.h"
-#include "fsm_automatic.h"
-#include "display7SEG.h"
 
 void mode_1(void){
 	fsm_automatic_run();

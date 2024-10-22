@@ -9,6 +9,8 @@
 #define INC_MODES_H_
 
 #include "global.h"
+#include "fsm_automatic.h"
+#include "display7SEG.h"
 
 void mode_1(void);
 void mode_2(void);
