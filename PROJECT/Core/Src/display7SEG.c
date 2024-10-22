@@ -228,15 +228,21 @@ void update7SEG(int index){
 }
 
 void updateBuffer(void){
-	if (second1_X > 9){
-		second1_X = 0;
-		second0_X++;
-		if (second0_X > 9) second0_X = 0;
+	if (second_X < 10){
+		led_buffer_X[0] = 0;
+		led_buffer_X[1] = second_X;
 	}
-	if (second1_Y > 9){
-		second1_Y = 0;
-		second0_Y++;
-		if (second0_Y > 9) second0_Y = 0;
+	if (second_Y < 10){
+		led_buffer_Y[0] = 0;
+		led_buffer_Y[1] = second_Y;
+	}
+	if (second_X >= 10){
+		led_buffer_X[0] = second_X / 10;
+		led_buffer_X[1] = second_X % 10;
+	}
+	if (second_Y >= 10){
+		led_buffer_Y[0] = second_Y / 10;
+		led_buffer_Y[1] = second_Y % 10;
 	}
 	update7SEG(index_led++);
 	if (index_led > 1) index_led = 0;
