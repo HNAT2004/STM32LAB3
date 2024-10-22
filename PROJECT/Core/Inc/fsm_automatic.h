@@ -10,7 +10,13 @@
 
 #include "global.h"
 #include "display7SEG.h"
+#include "software_timer.h"
 
-void fsm_automatic_run(void);
+extern int clock_X;
+extern int clock_Y;
+
+void fsm_automatic_run_X(void);
+void fsm_automatic_run_Y(void);
+void countdown(void);
 
 #endif /* INC_FSM_AUTOMATIC_H_ */

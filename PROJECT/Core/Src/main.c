@@ -101,9 +101,11 @@ int main(void)
   status_X = INIT;
   status_Y = INIT;
 
-  timer_flag_0 = 1;
   setTimer_X(10);
   setTimer_Y(10);
+  setTimer_Clock(100);
+  setTimer_Sweeper_X(25);
+  setTimer_Sweeper_Y(25);
   while (1)
   {
 	  mode_1();
