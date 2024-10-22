@@ -60,7 +60,8 @@ static void MX_TIM2_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+int second_X = 4;
+int second_Y = 2;
 /* USER CODE END 0 */
 
 /**
@@ -106,7 +107,20 @@ int main(void)
   while (1)
   {
 	  fsm_automatic_run();
+	  if (timer_flag_0 == 1){
+		  setTimer(100);
+		  second_X--;
+		  second_Y--;
 
+	  }
+	  if (timer_flag_1 == 1){
+		  setTimer_X(1);
+		  updateBuffer();
+	  }
+	  if (timer_flag_2 == 1){
+		  setTimer_Y(1);
+		  updateBuffer();
+	  }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
