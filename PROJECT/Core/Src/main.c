@@ -109,13 +109,7 @@ int main(void)
   while (1)
   {
 	  fsm_automatic_run();
-	  if (timer_flag_0 == 1){
-		  second1_X--;
-		  second1_Y--;
-		  if (second1_X < 0){
 
-		  }
-	  }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
