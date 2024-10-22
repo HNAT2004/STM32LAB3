@@ -108,7 +108,7 @@ int main(void)
   setTimer_Sweeper_Y(25);
   while (1)
   {
-	  mode_1();
+	  display7SEG_Y(7);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -254,10 +254,9 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
-	timer_run();
-	getKeyInput_1();
-	getKeyInput_2();
-	getKeyInput_3();
+	if (htim -> Instance == TIM2){
+		timer_run();
+	}
 }
 /* USER CODE END 4 */
 
