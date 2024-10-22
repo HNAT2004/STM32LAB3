@@ -100,7 +100,8 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   status_X = INIT;
   status_Y = INIT;
-  setTimer(100);
+
+  timer_flag_0 = 1;
   setTimer_X(10);
   setTimer_Y(10);
   while (1)
