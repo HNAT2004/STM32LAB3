@@ -16,7 +16,7 @@ void setTimer(int duration){
 }
 
 void setTimer1(int duration){
-	timer_counter = duration;
+	timer_counter_1 = duration;
 	timer_flag = 0;
 }
 
