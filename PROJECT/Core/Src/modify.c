@@ -10,13 +10,13 @@
 void modifyRedLED(void){
 	int clock_X = 5;
 	int clock_Y = 5;
+	updateBuffer(clock_X, clock_Y);
 	setTimer(50);
 	if (timer_flag_5 == 1){
-		setTimer(50);
-		HAL_GPIO_TogglePin(RED_X_GPIO_Port, RED_X_Pin);
-		HAL_GPIO_TogglePin(RED_Y_GPIO_Port, RED_Y_Pin);
+		HAL_GPIO_TogglePin(YELLOW_X_GPIO_Port, YELLOW_X_Pin);
+		HAL_GPIO_TogglePin(YELLOW_Y_GPIO_Port, YELLOW_Y_Pin);
+		timer_flag_5 = 0;
 	}
-	updateBuffer(clock_X, clock_Y);
 }
 void modifyYellowLED(void);
 void modifyGreenLED(void);

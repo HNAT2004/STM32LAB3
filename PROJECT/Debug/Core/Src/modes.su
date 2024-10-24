@@ -1,1 +1,2 @@
-modes.c:10:6:mode_1	8	static
+modes.c:12:6:mode_1	8	static
+modes.c:18:6:mode_2	8	static

@@ -25,7 +25,8 @@ Core/Src/modes.o: ../Core/Src/modes.c ../Core/Inc/modes.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Core/Inc/fsm_automatic.h ../Core/Inc/display7SEG.h \
- ../Core/Inc/fsm_automatic.h ../Core/Inc/display7SEG.h
+ ../Core/Inc/fsm_automatic.h ../Core/Inc/display7SEG.h \
+ ../Core/Inc/modify.h
 
 ../Core/Inc/modes.h:
 
@@ -92,3 +93,5 @@ Core/Src/modes.o: ../Core/Src/modes.c ../Core/Inc/modes.h \
 ../Core/Inc/fsm_automatic.h:
 
 ../Core/Inc/display7SEG.h:
+
+../Core/Inc/modify.h:
