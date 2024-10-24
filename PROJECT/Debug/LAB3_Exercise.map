@@ -637,9 +637,9 @@ Discarded input sections
  .data          0x0000000000000000        0x0 ./Core/Src/modify.o
  .bss           0x0000000000000000        0x0 ./Core/Src/modify.o
  .text.modifyRedLED
-                0x0000000000000000        0xe ./Core/Src/modify.o
- .debug_info    0x0000000000000000      0x216 ./Core/Src/modify.o
- .debug_abbrev  0x0000000000000000       0xb8 ./Core/Src/modify.o
+                0x0000000000000000       0x4c ./Core/Src/modify.o
+ .debug_info    0x0000000000000000      0x2c7 ./Core/Src/modify.o
+ .debug_abbrev  0x0000000000000000      0x109 ./Core/Src/modify.o
  .debug_aranges
                 0x0000000000000000       0x20 ./Core/Src/modify.o
  .debug_ranges  0x0000000000000000       0x10 ./Core/Src/modify.o
@@ -682,10 +682,10 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x148 ./Core/Src/modify.o
  .debug_macro   0x0000000000000000       0x10 ./Core/Src/modify.o
  .debug_macro   0x0000000000000000       0x40 ./Core/Src/modify.o
- .debug_line    0x0000000000000000      0x6a1 ./Core/Src/modify.o
- .debug_str     0x0000000000000000    0x7fd7a ./Core/Src/modify.o
+ .debug_line    0x0000000000000000      0x6b3 ./Core/Src/modify.o
+ .debug_str     0x0000000000000000    0x7fdb5 ./Core/Src/modify.o
  .comment       0x0000000000000000       0x54 ./Core/Src/modify.o
- .debug_frame   0x0000000000000000       0x2c ./Core/Src/modify.o
+ .debug_frame   0x0000000000000000       0x34 ./Core/Src/modify.o
  .ARM.attributes
                 0x0000000000000000       0x2d ./Core/Src/modify.o
  .group         0x0000000000000000        0xc ./Core/Src/software_timer.o

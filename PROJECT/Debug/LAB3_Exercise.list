@@ -2012,8 +2012,6 @@ void mode_1(void){
  8000e98:	f7ff fd9c 	bl	80009d4 <fsm_automatic_run_X>
 	fsm_automatic_run_Y();
  8000e9c:	f7ff fe30 	bl	8000b00 <fsm_automatic_run_Y>
-//	updateBuffer_X(clock_X);
-//	updateBuffer_Y(clock_Y);
 	updateBuffer(clock_X, clock_Y);
  8000ea0:	4b05      	ldr	r3, [pc, #20]	; (8000eb8 <mode_1+0x24>)
  8000ea2:	681b      	ldr	r3, [r3, #0]
