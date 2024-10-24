@@ -23,7 +23,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "software_timer.h"
-#include "button.h"
+//#include "button.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -96,8 +96,6 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   timer_flag_1 = 1;
-  setTimer1(50);
-  HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, GPIO_PIN_SET);
   while (1)
   {
 //	  if (isButton1Pressed() == 1){
