@@ -98,19 +98,23 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
   status_X = INIT;
   status_Y = INIT;
 
-  setTimer_X(10);
-  setTimer_Y(10);
-  setTimer_Clock(100);
-  setTimer_Sweeper_X(25);
-  setTimer_Sweeper_Y(25);
-  setTimer(50);
+  timer_flag_0 = 1;
+  timer_flag_1 = 1;
+  timer_flag_2 = 1;
+  timer_flag_3 = 1;
+  timer_flag_4 = 1;
   while (1)
   {
 //	  mode_1();
-	  mode_2();
+//	  mode_2();
+	  if (timer_flag_0 == 1){
+		  timer_flag_0 = 0;
+		  HAL_GPIO_TogglePin(RED_Y_GPIO_Port, RED_Y_Pin);
+	  }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
