@@ -60,7 +60,7 @@ static void MX_TIM2_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-int second_X = 4, second_Y = 2;
+//int second_X = 4, second_Y = 2;
 /* USER CODE END 0 */
 
 /**
