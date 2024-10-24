@@ -334,13 +334,15 @@
    </POPUP>
    <POPUP w="600" x="688" flags="0000002b" y="680" h="400" pid="100" iid="1">
     <PROPERTIES>
+     <ITEM name="Breakpoint 0">"",80005D8,0000,B920,69F9,-336967296
+</ITEM>
      <ITEM name="CaseSensitive">No</ITEM>
      <ITEM name="DISPADDRS">Yes</ITEM>
      <ITEM name="DISPLNUMS">No</ITEM>
      <ITEM name="DISPOPCODES">No</ITEM>
      <ITEM name="FIXUPBPTS">Yes</ITEM>
      <ITEM name="WordsOnly">No</ITEM>
-     <ITEM name="nBreakpoints">0</ITEM>
+     <ITEM name="nBreakpoints">1</ITEM>
     </PROPERTIES>
    </POPUP>
    <POPUP w="300" x="708" flags="0000000b" y="780" h="300" pid="101" iid="1">
