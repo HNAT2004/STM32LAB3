@@ -44,6 +44,11 @@ void setTimer_Sweeper_Y(int duration){
 	timer_flag_4 = 0;				//Start count-down
 }
 
+void setTimer(int duration){
+	timer_counter_5 = duration;
+	timer_flag_5 = 0;
+}
+
 void timer_run(void){
 	if(timer_counter_0 > 0){
 		timer_counter_0--;
@@ -73,6 +78,12 @@ void timer_run(void){
 		timer_counter_4--;
 		if(timer_counter_4 <= 0){
 			timer_flag_4 = 1;		//Time's up
+		}
+	}
+	if(timer_counter_5 > 0){
+		timer_counter_5--;
+		if(timer_counter_5 <= 0){
+			timer_flag_5 = 1;		//Time's up
 		}
 	}
 }

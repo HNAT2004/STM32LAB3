@@ -10,4 +10,8 @@
 
 #include "global.h"
 
+void modifyRedLED(void);
+void modifyYellowLED(void);
+void modifyGreenLED(void);
+
 #endif /* INC_MODIFY_H_ */
