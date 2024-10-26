@@ -9,6 +9,8 @@
 #include "display7SEG.h"
 #include "modify.h"
 
+int current_mode = 1;
+
 void mode_1(void){
 	fsm_automatic_run_X();
 	fsm_automatic_run_Y();

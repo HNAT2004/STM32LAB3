@@ -112,7 +112,8 @@ int main(void)
   {
 //	  mode_1();
 //	  mode_2();
-	  mode_3();
+//	  mode_3();
+	  mode_4();
 
     /* USER CODE END WHILE */
 
