@@ -9,6 +9,10 @@
 #include "display7SEG.h"
 #include "modify.h"
 
+int time_for_red = 5;
+int time_for_yellow = 2;
+int time_for_green = 3;
+
 int current_mode = 1;
 
 void mode_1(void){

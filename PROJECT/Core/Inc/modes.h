@@ -13,6 +13,9 @@
 #include "display7SEG.h"
 
 extern int current_mode;
+extern int time_for_red;
+extern int time_for_yellow;
+extern int time_for_green;
 
 void mode_1(void);
 void mode_2(void);

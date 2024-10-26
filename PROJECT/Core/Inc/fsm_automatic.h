@@ -11,6 +11,7 @@
 #include "global.h"
 #include "display7SEG.h"
 #include "software_timer.h"
+#include "modes.h"
 
 extern int clock_X;
 extern int clock_Y;

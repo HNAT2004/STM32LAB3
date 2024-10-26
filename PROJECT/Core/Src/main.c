@@ -99,8 +99,8 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
-//  status_X = INIT;
-//  status_Y = INIT;
+  status_X = INIT;
+  status_Y = INIT;
 
   timer_flag_0 = 1;
   timer_flag_1 = 1;
@@ -110,10 +110,10 @@ int main(void)
   timer_flag_5 = 1;
   while (1)
   {
-//	  mode_1();
+	  mode_1();
 //	  mode_2();
 //	  mode_3();
-	  mode_4();
+//	  mode_4();
 
     /* USER CODE END WHILE */
 

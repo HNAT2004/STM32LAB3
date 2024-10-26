@@ -1,4 +1,4 @@
-modes.c:14:6:mode_1	8	static
-modes.c:20:6:mode_2	8	static
-modes.c:24:6:mode_3	8	static
-modes.c:27:6:mode_4	8	static
+modes.c:18:6:mode_1	8	static
+modes.c:24:6:mode_2	8	static
+modes.c:28:6:mode_3	8	static
+modes.c:31:6:mode_4	8	static

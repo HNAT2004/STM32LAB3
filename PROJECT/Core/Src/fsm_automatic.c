@@ -25,8 +25,8 @@ void fsm_automatic_run_X(void){
 		HAL_GPIO_WritePin(GREEN_X_GPIO_Port, GREEN_X_Pin, GPIO_PIN_SET);
 
 		status_X = AUTO_RED_X;
-		clock_X = 5;
-		setTimer_X(500);
+		clock_X = time_for_red;
+		setTimer_X(time_for_red * 100);
 		break;
 
 	case AUTO_RED_X:
@@ -36,8 +36,8 @@ void fsm_automatic_run_X(void){
 
 		if (timer_flag_1 == 1){
 			status_X = AUTO_GREEN_X;
-			clock_X = 3;
-			setTimer_X(300);
+			clock_X = time_for_green;
+			setTimer_X(time_for_green * 100);
 		}
 		break;
 
@@ -48,8 +48,8 @@ void fsm_automatic_run_X(void){
 
 		if (timer_flag_1 == 1){
 			status_X = AUTO_RED_X;
-			clock_X = 5;
-			setTimer_X(500);
+			clock_X = time_for_red;
+			setTimer_X(time_for_red * 100);
 		}
 		break;
 
@@ -60,8 +60,8 @@ void fsm_automatic_run_X(void){
 
 		if (timer_flag_1 == 1){
 			status_X = AUTO_YELLOW_X;
-			clock_X = 2;
-			setTimer_X(200);
+			clock_X = time_for_yellow;
+			setTimer_X(time_for_yellow * 100);
 		}
 		break;
 
@@ -78,8 +78,8 @@ void fsm_automatic_run_Y(void){
 		HAL_GPIO_WritePin(GREEN_Y_GPIO_Port, GREEN_Y_Pin, GPIO_PIN_SET);
 
 		status_Y = AUTO_GREEN_Y;
-		clock_Y = 3;
-		setTimer_Y(300);
+		clock_Y = time_for_green;
+		setTimer_Y(time_for_green * 100);
 		break;
 
 	case AUTO_RED_Y:
@@ -89,8 +89,8 @@ void fsm_automatic_run_Y(void){
 
 		if (timer_flag_2 == 1){
 			status_Y = AUTO_GREEN_Y;
-			clock_Y = 3;
-			setTimer_Y(300);
+			clock_Y = time_for_green;
+			setTimer_Y(time_for_green * 100);
 		}
 		break;
 
@@ -101,8 +101,8 @@ void fsm_automatic_run_Y(void){
 
 		if (timer_flag_2 == 1){
 			status_Y = AUTO_RED_Y;
-			clock_Y = 5;
-			setTimer_Y(500);
+			clock_Y = time_for_red;
+			setTimer_Y(time_for_red * 100);
 		}
 		break;
 
@@ -113,8 +113,8 @@ void fsm_automatic_run_Y(void){
 
 		if (timer_flag_2 == 1){
 			status_Y = AUTO_YELLOW_Y;
-			clock_Y = 2;
-			setTimer_Y(200);
+			clock_Y = time_for_yellow;
+			setTimer_Y(time_for_yellow * 100);
 		}
 		break;
 
