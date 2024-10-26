@@ -19,5 +19,9 @@ void mode_2(void){
 	modifyRedLED();
 }
 
-void mode_3(void);
-void mode_4(void);
+void mode_3(void){
+	modifyYellowLED();
+}
+void mode_4(void){
+	modifyGreenLED();
+}
