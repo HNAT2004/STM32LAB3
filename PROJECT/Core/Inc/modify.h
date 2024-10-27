@@ -10,6 +10,8 @@
 
 #include "global.h"
 
+extern int mode;
+
 void modifyRedLED(void);
 void modifyYellowLED(void);
 void modifyGreenLED(void);
