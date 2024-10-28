@@ -9,6 +9,7 @@
 #define INC_MODIFY_H_
 
 #include "global.h"
+#include "modes.h"
 
 extern int mode;
 

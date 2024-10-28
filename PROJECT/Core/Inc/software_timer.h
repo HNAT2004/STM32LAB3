@@ -22,5 +22,6 @@ void setTimer_Clock(int duration);
 void setTimer_Sweeper_X(int duration);
 void setTimer_Sweeper_Y(int duration);
 void timer_run(void);
+//void isTimerExpired(void);
 
 #endif /* INC_SOFTWARE_TIMER_H_ */

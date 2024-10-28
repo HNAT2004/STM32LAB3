@@ -9,7 +9,7 @@
 
 void modifyRedLED(void){
 	int mode = 2;
-	int clock_Y = 5;
+	int clock_Y = time_set;
 	HAL_GPIO_WritePin(YELLOW_X_GPIO_Port, YELLOW_X_Pin, GPIO_PIN_SET);
 	HAL_GPIO_WritePin(GREEN_X_GPIO_Port, GREEN_X_Pin, GPIO_PIN_SET);
 	HAL_GPIO_WritePin(YELLOW_Y_GPIO_Port, YELLOW_Y_Pin, GPIO_PIN_SET);
@@ -23,7 +23,7 @@ void modifyRedLED(void){
 }
 void modifyYellowLED(void){
 	int mode = 3;
-	int clock_Y = 2;
+	int clock_Y = time_set;
 	HAL_GPIO_WritePin(RED_X_GPIO_Port, RED_X_Pin, GPIO_PIN_SET);
 	HAL_GPIO_WritePin(GREEN_X_GPIO_Port, GREEN_X_Pin, GPIO_PIN_SET);
 	HAL_GPIO_WritePin(RED_Y_GPIO_Port, RED_Y_Pin, GPIO_PIN_SET);
@@ -37,7 +37,7 @@ void modifyYellowLED(void){
 }
 void modifyGreenLED(void){
 	int mode = 4;
-	int clock_Y = 3;
+	int clock_Y = time_set;
 	HAL_GPIO_WritePin(YELLOW_X_GPIO_Port, YELLOW_X_Pin, GPIO_PIN_SET);
 	HAL_GPIO_WritePin(RED_X_GPIO_Port, RED_X_Pin, GPIO_PIN_SET);
 	HAL_GPIO_WritePin(YELLOW_Y_GPIO_Port, YELLOW_Y_Pin, GPIO_PIN_SET);
