@@ -110,10 +110,6 @@ int main(void)
   timer_flag_5 = 1;
   while (1)
   {
-//	  mode_1();
-//	  mode_2();
-//	  mode_3();
-//	  mode_4();
 	  run_traffic_light();
     /* USER CODE END WHILE */
 

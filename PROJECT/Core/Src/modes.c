@@ -12,9 +12,11 @@
 int time_for_red = 5;
 int time_for_yellow = 2;
 int time_for_green = 3;
-int time_set = 0;
 
 int current_mode = 1;
+int save_red = 5;
+int save_yellow = 2;
+int save_green = 3;
 
 void mode_1(void){
 	fsm_automatic_run_X();
@@ -24,44 +26,44 @@ void mode_1(void){
 }
 
 void mode_2(void){
-	time_set = time_for_red;
 	modifyRedLED();
 	if (isButton2Pressed()){
-		time_set++;
-		if (time_set > 99){
-			time_for_red = 0;
+		time_for_red++;
+		if (time_for_red > 99){
+			time_for_red = 1;
 		}
 	}
 	if (isButton3Pressed()){
-		time_for_red = time_set;
+		save_red = time_for_red;
+		save_green = save_red - save_yellow;
 	}
 }
 
 void mode_3(void){
-	time_set = time_for_yellow;
 	modifyYellowLED();
 	if (isButton2Pressed()){
-		time_set++;
-		if (time_set > 99){
-			time_for_yellow = 0;
+		time_for_yellow++;
+		if (time_for_yellow > 99){
+			time_for_yellow = 1;
 		}
 	}
 	if (isButton3Pressed()){
-		time_for_yellow = time_set;
+		save_yellow = time_for_yellow;
+		save_red = save_green + save_yellow;
 	}
 }
 
 void mode_4(void){
-	time_set = time_for_green;
 	modifyGreenLED();
 	if (isButton2Pressed()){
-		time_set++;
-		if (time_set > 99){
-			time_for_green = 0;
+		time_for_green++;
+		if (time_for_green > 99){
+			time_for_green = 1;
 		}
 	}
 	if (isButton3Pressed()){
-		time_for_green = time_set;
+		save_green = time_for_green;
+		save_red = save_green + save_yellow;
 	}
 }
 
@@ -70,11 +72,15 @@ void change_mode(void){
 		current_mode++;
 		if (current_mode > 4){
 			current_mode = 1;
-			setTimer_X(time_for_red * 100);
-			setTimer_Y(time_for_green * 100);
-			clock_X = time_for_red;
-			clock_Y = time_for_green;
 		}
+		setTimer_X(time_for_red * 100);
+		setTimer_Y(time_for_green * 100);
+		clock_X = time_for_red;
+		clock_Y = time_for_green;
+
+		time_for_red = save_red;
+		time_for_yellow = save_yellow;
+		time_for_green = save_green;
 	}
 }
 
