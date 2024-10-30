@@ -16,6 +16,10 @@ extern int time_for_red;
 extern int time_for_yellow;
 extern int time_for_green;
 
+extern int save_red;
+extern int save_yellow;
+extern int save_green;
+
 void mode_1(void);
 void mode_2(void);
 void mode_3(void);

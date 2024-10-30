@@ -73,10 +73,10 @@ void change_mode(void){
 		if (current_mode > 4){
 			current_mode = 1;
 		}
-		setTimer_X(time_for_red * 100);
-		setTimer_Y(time_for_green * 100);
-		clock_X = time_for_red;
-		clock_Y = time_for_green;
+		setTimer_X(save_red * 100);
+		setTimer_Y(save_green * 100);
+		clock_X = save_red;
+		clock_Y = save_green;
 
 		time_for_red = save_red;
 		time_for_yellow = save_yellow;
